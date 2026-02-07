@@ -39,10 +39,17 @@ const Home = () => {
 
   return (
     <div className="home">
+
       <section className="hero">
         <h1>Welcome to Dynamics 365 Insights</h1>
-        <p>Your comprehensive resource for Microsoft Dynamics 365 news, tutorials, and best practices</p>
-        <button className="cta-button">Start Exploring</button>
+        <p>
+          Your comprehensive resource for Microsoft Dynamics 365 news, tutorials, 
+          and best practices. Empowering businesses with intelligent insights.
+        </p>
+        <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem'}}>
+          <button className="cta-button">Start Exploring</button>
+          <button className="cta-button secondary">Watch Demo</button>
+        </div>
       </section>
 
       <section className="featured-posts">
@@ -56,15 +63,16 @@ const Home = () => {
 
       <section className="newsletter">
         <div className="newsletter-content">
-          <h3>Stay Updated</h3>
-          <p>Subscribe to our newsletter for the latest Dynamics 365 updates and insights</p>
-          <form className="newsletter-form">
+          <h3>Stay Updated with Microsoft</h3>
+          <p>Subscribe for the latest Dynamics 365 updates and insights directly from Microsoft</p>
+          <form className="newsletter-form" style={{display: 'flex', gap: '1rem', maxWidth: '500px', margin: '0 auto'}}>
             <input 
               type="email" 
-              placeholder="Enter your email" 
+              placeholder="Enter your work email" 
               className="email-input"
+              style={{flex: 1, padding: '0.75rem', border: '1px solid var(--ms-gray-30)', borderRadius: '4px'}}
             />
-            <button type="submit" className="subscribe-btn">Subscribe</button>
+            <button type="submit" className="cta-button">Subscribe</button>
           </form>
         </div>
       </section>
